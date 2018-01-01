@@ -1,0 +1,722 @@
+@font-face {
+  font-family: "Bariol";
+  src: asset-url("Bariol_Regular.otf");
+}
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: asset-url("MyriadProRegular.eot");
+  src: asset-url("MyriadProRegular.eot?#iefix") format("embedded-opentype"), asset-url("MyriadProRegular.woff") format("woff"), asset-url("MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+  font-family: "MyriadProBold";
+  src: asset-url("MyriadProBold.eot");
+  src: asset-url("MyriadProBold.eot?#iefix") format("embedded-opentype"), asset-url("MyriadProBold.woff") format("woff"), asset-url("MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProItalic"; */
+@font-face {
+  font-family: "MyriadProItalic";
+  src: asset-url("MyriadProItalic.eot");
+  src: asset-url("MyriadProItalic.eot?#iefix") format("embedded-opentype"), asset-url("MyriadProItalic.woff") format("woff"), asset-url("MyriadProItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+  font-family: "MyriadProSemiBold";
+  src: asset-url("MyriadProSemiBold.eot");
+  src: asset-url("MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), asset-url("MyriadProSemiBold.woff") format("woff"), asset-url("MyriadProSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+  font-family: "MyriadProBoldItalic";
+  src: asset-url("MyriadProBoldItalic.eot");
+  src: asset-url("MyriadProBoldItalic.eot?#iefix") format("embedded-opentype"), asset-url("MyriadProBoldItalic.woff") format("woff"), asset-url("MyriadProBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+  font-family: "MyriadProSemiBoldItalic";
+  src: asset-url("MyriadProSemiBoldItalic.eot");
+  src: asset-url("MyriadProSemiBoldItalic.eot?#iefix") format("embedded-opentype"), asset-url("MyriadProSemiBoldItalic.woff") format("woff"), asset-url("MyriadProSemiBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  background-color: #616161;
+}
+.total_container {
+  overflow: hidden;
+  height: inherit;
+  margin: 0 auto;
+  background-color: gray;
+}
+.total_container .nav-pills > li,
+.total_container li {
+  margin-left: 0;
+}
+.total_container .navigation_custom {
+  font-family: "Arial";
+  color: #ffffff;
+  font-size: 13px;
+  padding-top: 34px;
+  font-weight: 700;
+}
+.total_container .navigation_custom #logo_head_title {
+  font-family: "Bariol";
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+  text-shadow: 0 1px 1px #c34b2a;
+}
+.total_container .navigation_custom #logo_head_text {
+  font-family: "Bariol";
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+  text-shadow: 0 1px 1px #c34b2a;
+  font-size: 17px;
+}
+.total_container .navigation_custom .container-fluid .col-sm-1.col-sm-offset-3.col-xs-12 li a {
+  background-color: #232324;
+}
+.total_container .navigation_custom .container-fluid .col-sm-1.col-sm-offset-3.col-xs-12 li a:hover {
+  background-color: #ffffff;
+  color: #232324;
+}
+.total_container .navigation_custom .container-fluid li a {
+  color: #ffffff;
+  background-color: transparent;
+}
+.total_container .navigation_custom .container-fluid .nav > li > a:focus,
+.total_container .navigation_custom .container-fluid .nav > li > a:hover {
+  background-color: #232324;
+}
+.total_container .logo {
+  min-height: 100px;
+  width: 160px;
+  margin-left: 20px;
+  margin-top: -29.99999999px;
+}
+@media all and (max-width: 767px) {
+  .total_container .logo {
+    margin: 0 auto;
+  }
+}
+.total_container .welcome_block .welcome_title {
+  font-family: "Bariol";
+  color: #ffffff;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 1px 1px #c34b2a;
+}
+.total_container .welcome_block .welcome_title h2 {
+  font-size: 60px;
+  padding-top: 1em;
+  margin: 0;
+}
+.total_container .welcome_block .carousel {
+  padding-top: 51px;
+}
+.total_container .welcome_block .carousel img {
+  height: 430px;
+}
+.total_container .welcome_block .carousel .left.carousel-control,
+.total_container .welcome_block .carousel .right.carousel-control {
+  top: 51px;
+}
+.total_container .welcome_block .carousel-inner {
+  text-align: -webkit-center;
+}
+.total_container .latest_tweets .welcome_title {
+  font-family: "Bariol";
+  color: #ffffff;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  text-shadow: 0 1px 1px #c34b2a;
+  min-height: 278px;
+}
+.total_container .latest_tweets .welcome_title h2 {
+  font-size: 60px;
+  padding-top: 0.6em;
+}
+.total_container .latest_tweets .welcome_title i {
+  text-align: justify;
+}
+.total_container .latest_tweets .welcome_title .img-responsive {
+  display: block;
+  width: initial;
+  height: auto;
+  margin: auto;
+  padding: 5px 0;
+}
+.total_container .latest_tweets .welcome_title .black_text {
+  color: #232324;
+  display: inline;
+}
+.total_container .comunications {
+  font-family: "Bariol";
+  color: #eb4f4e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+.total_container .comunications .white_text {
+  color: #ffffff;
+}
+.total_container .comunications .header_communic {
+  display: inline-block;
+  background-color: #eb4f4e;
+  border: 3px #232324 solid;
+  border-radius: 12px;
+  width: 130px;
+  text-align: right;
+  float: right;
+}
+.total_container .comunications .header_communic img {
+  padding-right: 6px;
+}
+.total_container .navigation_custom {
+  background-color: #e74c3c;
+  height: 110px;
+}
+@media all and (max-width: 767px) {
+  .total_container .navigation_custom {
+    height: inherit;
+  }
+}
+.total_container .navigation_custom #logo_head_title {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.total_container .navigation_custom #logo_head_text {
+  position: absolute;
+  margin-top: 55px;
+}
+.total_container .navigation_custom img {
+  position: absolute;
+  margin-top: 18px;
+  padding: 0;
+}
+.total_container .welcome_block {
+  min-height: 640px;
+  background-color: #eb4f4e;
+}
+.total_container .smart_creative {
+  min-height: 368px;
+  font-family: "Bariol";
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 1px 1px #c34b2a;
+  font-weight: 400;
+  color: #e74c3c;
+  background-color: #232324;
+  padding-top: 0.8em;
+  padding-bottom: 0.4em;
+  box-sizing: border-box;
+}
+.total_container .smart_creative h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.total_container .smart_creative img {
+  position: relative;
+  z-index: 0;
+  padding-top: 10px;
+}
+.total_container .smart_creative .title {
+  font-size: 24px;
+}
+.total_container .smart_creative .title h2 {
+  font-size: 36px;
+  line-height: 36px;
+}
+.total_container .our_team {
+  min-height: 368px;
+  font-family: "Bariol";
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 1px 1px #c34b2a;
+  font-weight: 400;
+  color: #e74c3c;
+  background-color: #232324;
+  padding-top: 0.8em;
+  padding-bottom: 0.4em;
+  box-sizing: border-box;
+  min-height: 515px;
+  background-color: #6cc372;
+  text-shadow: 0 1px 1px #232324;
+  overflow: hidden;
+}
+.total_container .our_team h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.total_container .our_team img {
+  position: relative;
+  z-index: 0;
+  padding-top: 10px;
+}
+.total_container .our_team .title {
+  font-size: 24px;
+}
+.total_container .our_team .title h2 {
+  font-size: 36px;
+  line-height: 36px;
+}
+.total_container .our_team h2 {
+  color: #6cc372;
+  font-size: 25px;
+  word-spacing: 600px;
+}
+.total_container .our_team img {
+  border: 3px solid #6cc372;
+  border-radius: 100px;
+  padding-top: 0;
+}
+.total_container .our_team .col-sm-3 {
+  background-color: #ffffff;
+  border: 5px #6cc372 solid;
+  border-radius: 20px;
+  padding-top: 10px;
+  min-height: 340px;
+}
+.total_container .our_team .title {
+  font-size: 20px;
+  color: #232324;
+  margin-bottom: 10px;
+}
+.total_container .our_team .title h2 {
+  color: #ffffff;
+  font-size: 40px;
+  word-spacing: normal;
+}
+.total_container .pricingTableContainer {
+  background-color: #ffffff;
+  min-height: 370px;
+}
+.total_container .pricingTableContainer .col-sm-12.col-xs-12 {
+  background-color: #ffffff;
+}
+.total_container .pricingTableContainer .row {
+  margin-top: -144px;
+}
+.total_container .pricingTableContainer .pricingTable {
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  border-radius: 10px;
+  text-align: center;
+}
+.total_container .pricingTableContainer .pricingTable .pricingTable-header {
+  background-color: #f5f5f5;
+  color: #fff;
+  padding-bottom: 25px;
+}
+.total_container .pricingTableContainer .pricingTable-header .heading {
+  display: block;
+  padding: 15px 10px;
+  transition: 0.4s ease-in-out;
+}
+.total_container .pricingTableContainer .pricingTable:hover .heading {
+  background-color: #419e00;
+}
+.total_container .pricingTableContainer .pricingTable .heading h3 {
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+.total_container .pricingTableContainer .pricingTable-header .price-value {
+  display: block;
+  font-size: 25px;
+  font-weight: 800;
+  color: #474747;
+  line-height: 35px;
+  margin-top: 10px;
+  padding: 20px 10px 0;
+}
+.total_container .pricingTableContainer .pricingTable .price-value span {
+  font-size: 60px;
+  font-weight: 100;
+}
+.total_container .pricingTableContainer .pricingTable .subtitle {
+  font-size: 13px;
+  color: #262626;
+  margin-top: 15px;
+  display: block;
+}
+.total_container .pricingTableContainer .pricingTable .pricingContent ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.total_container .pricingTableContainer .pricingTable .pricingContent ul li {
+  border-top: 1px solid #dbdbdb;
+  padding: 10px 0;
+  background-color: #f7fff7;
+}
+.total_container .pricingTableContainer .pricingTable .pricingContent ul li:nth-child(odd) {
+  background-color: #fff;
+}
+.total_container .pricingTableContainer .pricingContent ul li:last-child {
+  border-bottom: 1px solid #dbdbdb;
+}
+.total_container .pricingTableContainer .pricingTable .btn-block {
+  background: #82b440;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  width: 50%;
+  padding: 10px 5px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+}
+.total_container .pricingTableContainer .pricingTable .btn-block:after {
+  content: "\f090";
+  font-family: 'FontAwesome';
+  font-size: 15px;
+  padding-left: 10px;
+}
+.total_container .pricingTableContainer .pricingTable .btn-block:hover {
+  background: #419e00;
+  color: #fff;
+}
+@media screen and (max-width: 990px) {
+  .total_container .pricingTableContainer .pricingTable {
+    margin-bottom: 20px;
+  }
+}
+.total_container .latest_tweets {
+  background-color: #eb4f4e;
+  min-height: 298px;
+}
+.total_container .comunications {
+  min-height: 48px;
+  background-color: #232324;
+  display: inline-block;
+  width: inherit;
+}
+@media all and (max-width: 767px) {
+  .total_container .comunications {
+    height: inherit;
+    text-align: center;
+  }
+  .total_container .comunications .header_communic {
+    width: inherit;
+    text-align: center;
+  }
+}
+.total_container .map {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.carousel_multiple {
+  font-family: "Bariol";
+  color: #6cc372;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 1px 1px #232324;
+  height: 560px;
+  background-color: rgba(236, 236, 236, 0.8);
+  overflow: hidden;
+  line-height: 1em;
+  box-sizing: border-box;
+}
+.carousel_multiple h1 {
+  color: #616161;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+.carousel_multiple .row {
+  margin-top: 30px;
+}
+.carousel_multiple .col-sm-4 {
+  color: #232324;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+.carousel_multiple .col-sm-4 a {
+  line-height: 28px;
+}
+.carousel_multiple .col-sm-4 p {
+  margin-top: 1em;
+}
+.pricingTableContainer {
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.pricingTableContainer .container-fluid {
+  margin-bottom: 30px;
+}
+.pricingTableContainer .container-fluid .row .col-sm-4.col-xs-12:nth-child(odd) {
+  margin-top: 47px;
+}
+.pricingTableContainer .pricingTable-top {
+  font-family: "Bariol";
+  color: #eb4f4e;
+  font-size: 20px;
+  font-weight: 400;
+  height: 110px;
+  padding-left: 2px;
+  font-family: "MyriadProRegular";
+  color: #ffffff;
+  background-color: #616161;
+  text-align: -webkit-left;
+  height: 94px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.pricingTableContainer .pricingTable-top .price-value-top {
+  color: #616161;
+  font-size: 40px;
+  font-weight: 400;
+  display: block;
+}
+.pricingTableContainer .pricingTable-top .price-period-top {
+  color: #eb4f4e;
+  font-family: "Bariol";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-top .price-value {
+  font-size: 64.23px;
+  font-weight: 700;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-top .price-period {
+  font-size: 24.98px;
+  font-weight: 400;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-top .btn.btn-block.btn-default {
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 93px;
+  height: 33px;
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 66px;
+  top: -57px;
+}
+.pricingTableContainer .pricingTableContent {
+  background-color: #f0f0f0;
+  word-spacing: 60px;
+  height: 94px;
+}
+.pricingTableContainer .pricingTable-sign-up {
+  padding-left: 2px;
+  font-family: "MyriadProRegular";
+  color: #ffffff;
+  background-color: #616161;
+  text-align: -webkit-left;
+  height: 94px;
+}
+.pricingTableContainer .pricingTable-sign-up .price-value {
+  font-size: 64.23px;
+  font-weight: 700;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-sign-up .price-period {
+  font-size: 24.98px;
+  font-weight: 400;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-sign-up .btn.btn-block.btn-default {
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 93px;
+  height: 33px;
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 66px;
+  top: -57px;
+}
+.pricingTableContainer .pricingTable-top-middle {
+  font-family: "Bariol";
+  color: #eb4f4e;
+  font-size: 20px;
+  font-weight: 400;
+  height: 110px;
+  padding-left: 2px;
+  font-family: "MyriadProRegular";
+  color: #ffffff;
+  background-color: #616161;
+  text-align: -webkit-left;
+  height: 94px;
+  text-align: center;
+  background-color: #ffffff;
+  height: 141px;
+}
+.pricingTableContainer .pricingTable-top-middle .price-value-top {
+  color: #616161;
+  font-size: 40px;
+  font-weight: 400;
+  display: block;
+}
+.pricingTableContainer .pricingTable-top-middle .price-period-top {
+  color: #eb4f4e;
+  font-family: "Bariol";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-top-middle .price-value {
+  font-size: 64.23px;
+  font-weight: 700;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-top-middle .price-period {
+  font-size: 24.98px;
+  font-weight: 400;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-top-middle .btn.btn-block.btn-default {
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 93px;
+  height: 33px;
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 66px;
+  top: -57px;
+}
+.pricingTableContainer .pricingTable-top-middle .price-value-top {
+  color: #eb4f4e;
+}
+.pricingTableContainer .pricingTable-top-middle .price-period-top {
+  color: #232324;
+}
+.pricingTableContainer .pricingTable-sign-up-middle {
+  padding-left: 2px;
+  font-family: "MyriadProRegular";
+  color: #ffffff;
+  background-color: #616161;
+  text-align: -webkit-left;
+  height: 94px;
+  background-color: #eb4f4e;
+}
+.pricingTableContainer .pricingTable-sign-up-middle .price-value {
+  font-size: 64.23px;
+  font-weight: 700;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-sign-up-middle .price-period {
+  font-size: 24.98px;
+  font-weight: 400;
+  text-align: center;
+}
+.pricingTableContainer .pricingTable-sign-up-middle .btn.btn-block.btn-default {
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 93px;
+  height: 33px;
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 66px;
+  top: -57px;
+}
+.pricingTableContainer .pricingTable-sign-up-middle .btn.btn-block.btn-default {
+  color: #eb4f4e;
+}
+@media all and (max-width: 767px) {
+  body .total_container {
+    width: 100%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  body .total_container {
+    width: 800px;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  body .total_container {
+    width: 800px;
+  }
+}
+@media all and (min-width: 1200px) {
+  body .total_container {
+    width: 800px;
+  }
+}
+.multi-item-carousel .carousel-inner > .item {
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    backface-visibility: visible;
+    transform: none!important;
+  }
+}
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+  background-image: none;
+}
+@media all and (max-width: 767px) {
+  .nav-pills > li {
+    float: none;
+    text-align: center;
+  }
+}

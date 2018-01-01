@@ -3,16 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @font-face {
   font-family: "SFUIText-Light";
-  src: url(/assets/SFUIText-Light.otf) format("truetype"); }
+  src: asset-url('SFUIText-Light.otf') format("truetype"); }
 @font-face {
   font-family: "GOTHICB";
-  src: url(/assets/GOTHICB.TTF) format("truetype"); }
+  src: asset-url('GOTHICB.TTF') format("truetype"); }
 @font-face {
   font-family: "BebasNeue Bold";
-  src: url(/assets/BebasNeue_Bold.ttf) format("truetype"); }
+  src: asset-url('BebasNeue_Bold.ttf') format("truetype"); }
 @font-face {
   font-family: "LatoRegular";
-  src: url(/assets/LatoRegular.ttf) format("truetype"); }
+  src: asset-url('LatoRegular.ttf') format("truetype"); }
 body {
   margin: 0px; }
 

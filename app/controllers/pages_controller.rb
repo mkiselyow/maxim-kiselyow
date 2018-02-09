@@ -7,4 +7,8 @@ class PagesController < ApplicationController
 
   def one_page_store
   end
+
+  def visit_page
+    render template: 'pages/visit_page', layout: 'visit_page_layout'
+  end
 end

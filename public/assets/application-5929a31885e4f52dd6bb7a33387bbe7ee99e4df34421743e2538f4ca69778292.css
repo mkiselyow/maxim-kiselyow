@@ -1,0 +1,2363 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Bariol";
+  src: url(/assets/Bariol_Regular-8eca6225ae481ef8e76492bd9f271112143f8ad16f2d2f5cefaa6d1363cef5fc.otf);
+}
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url(/assets/MyriadProRegular-e7b549f0ebfd662bc5286eb4792af4752d7bc6a825305c31b5e0df8cb52f7987.eot);
+  src: url(/assets/MyriadProRegular-e7b549f0ebfd662bc5286eb4792af4752d7bc6a825305c31b5e0df8cb52f7987.eot?#iefix) format("embedded-opentype"), url(/assets/MyriadProRegular-1480dded4b7ef65f3f3f28acd39d61e1d3a8cd9424079cba2099e54b85d3008e.woff) format("woff"), url(/assets/MyriadProRegular-d443a4553e4a9be5f8062be4612095df1bd64818d44858403b0f0831e7cc6704.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+  font-family: "MyriadProBold";
+  src: url(/assets/MyriadProBold-326febbf0e9f67fc6be338240377b5ce7144a2c7d502832c14f0f2ae0953d74c.eot);
+  src: url(/assets/MyriadProBold-326febbf0e9f67fc6be338240377b5ce7144a2c7d502832c14f0f2ae0953d74c.eot?#iefix) format("embedded-opentype"), url(/assets/MyriadProBold-fd431c15907be5b5793ae35975f723af71d906662ae12f832493730732979311.woff) format("woff"), url(/assets/MyriadProBold-589a395cc9e3d52005d1720e8e769ad31d33080c035f220c79d3b034eb5c9411.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProItalic"; */
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url(/assets/MyriadProItalic-25fd7ee059aacd4da80e6e533fc76f51e61ca834e0c8890395e1cfa75de71e76.eot);
+  src: url(/assets/MyriadProItalic-25fd7ee059aacd4da80e6e533fc76f51e61ca834e0c8890395e1cfa75de71e76.eot?#iefix) format("embedded-opentype"), url(/assets/MyriadProItalic-0008d20b830ffd7514742ba5b7defd1109181ee548ec28ee21b4cca76b7c1f90.woff) format("woff"), url(/assets/MyriadProItalic-ceb977622dd361502af9dde1f7f2a6e58d8c37ba3b13bb08162ee675da874979.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+  font-family: "MyriadProSemiBold";
+  src: url(/assets/MyriadProSemiBold-ffee3d351d82c013cd69c8377bccdbcce9555c0e65c0e91ff2622c76e5177b55.eot);
+  src: url(/assets/MyriadProSemiBold-ffee3d351d82c013cd69c8377bccdbcce9555c0e65c0e91ff2622c76e5177b55.eot?#iefix) format("embedded-opentype"), url(/assets/MyriadProSemiBold-9c7ebed3f5d866ad4b2e475d2b9bf97db047ec4d516f8549ace71c8e6a051e81.woff) format("woff"), url(/assets/MyriadProSemiBold-a15dce702912ffd7b3d79da3b33b72a6515f489dd53b5803605dd7a435bb31cc.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+  font-family: "MyriadProBoldItalic";
+  src: url(/assets/MyriadProBoldItalic-9688c7bd564f0d3ad8c57d89290459d740e626ff5d8eed7946534d6d422e96ad.eot);
+  src: url(/assets/MyriadProBoldItalic-9688c7bd564f0d3ad8c57d89290459d740e626ff5d8eed7946534d6d422e96ad.eot?#iefix) format("embedded-opentype"), url(/assets/MyriadProBoldItalic-532424925ea75e731022e610ff597377f317e6f7d084b193ac2fb5165e3780fc.woff) format("woff"), url(/assets/MyriadProBoldItalic-21e6d96a7d7f576b65de8908d6dbb0d6be9d4fdb0a8a77bf4e93973884915415.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+  font-family: "MyriadProSemiBoldItalic";
+  src: url(/assets/MyriadProSemiBoldItalic-612a53428f34c07738b9b6654209200a33a7bf960232fba6190e98de8e0bacb2.eot);
+  src: url(/assets/MyriadProSemiBoldItalic-612a53428f34c07738b9b6654209200a33a7bf960232fba6190e98de8e0bacb2.eot?#iefix) format("embedded-opentype"), url(/assets/MyriadProSemiBoldItalic-d88a4f72b3f46f75b63868f4783e41112c8c869839aa25074e75d7bbf66eb588.woff) format("woff"), url(/assets/MyriadProSemiBoldItalic-36c2fe8d75beb0ef7d305dc34aa72c88f0da45fa06752c818f9e5f60c0081484.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 53, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container {
+  overflow: hidden;
+  height: inherit;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+/* line 59, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .nav-pills > li,
+.total_container li {
+  margin-left: 0;
+}
+
+/* line 63, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom {
+  font-family: "Arial";
+  color: #ffffff;
+  font-size: 13px;
+  padding-top: 34px;
+  font-weight: 700;
+}
+
+/* line 70, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom #logo_head_title {
+  font-family: "Bariol";
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+  text-shadow: 0 1px 1px #c34b2a;
+}
+
+/* line 77, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom #logo_head_text {
+  font-family: "Bariol";
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+  text-shadow: 0 1px 1px #c34b2a;
+  font-size: 17px;
+}
+
+/* line 85, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom .container-fluid .col-sm-1.col-sm-offset-3.col-xs-12 li a {
+  background-color: #232324;
+}
+
+/* line 88, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom .container-fluid .col-sm-1.col-sm-offset-3.col-xs-12 li a:hover {
+  background-color: #ffffff;
+  color: #232324;
+}
+
+/* line 92, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom .container-fluid li a {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+/* line 96, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom .container-fluid .nav > li > a:focus,
+.total_container .navigation_custom .container-fluid .nav > li > a:hover {
+  background-color: #232324;
+}
+
+/* line 100, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .logo {
+  min-height: 100px;
+  width: 160px;
+  margin-left: 20px;
+  margin-top: -29.99999999px;
+}
+
+@media all and (max-width: 767px) {
+  /* line 107, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  .total_container .logo {
+    margin: 0 auto;
+  }
+}
+/* line 111, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .welcome_block .welcome_title {
+  font-family: "Bariol";
+  color: #ffffff;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 1px 1px #c34b2a;
+}
+
+/* line 120, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .welcome_block .welcome_title h2 {
+  font-size: 60px;
+  padding-top: 1em;
+  margin: 0;
+}
+
+/* line 125, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .welcome_block .carousel {
+  padding-top: 51px;
+}
+
+/* line 128, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .welcome_block .carousel img {
+  height: 430px;
+}
+
+/* line 131, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .welcome_block .carousel .left.carousel-control,
+.total_container .welcome_block .carousel .right.carousel-control {
+  top: 51px;
+}
+
+/* line 135, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .welcome_block .carousel-inner {
+  text-align: -webkit-center;
+}
+
+/* line 138, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .latest_tweets .welcome_title {
+  font-family: "Bariol";
+  color: #ffffff;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  text-shadow: 0 1px 1px #c34b2a;
+  min-height: 278px;
+}
+
+/* line 150, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .latest_tweets .welcome_title h2 {
+  font-size: 60px;
+  padding-top: 0.6em;
+}
+
+/* line 154, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .latest_tweets .welcome_title i {
+  text-align: justify;
+}
+
+/* line 157, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .latest_tweets .welcome_title .img-responsive {
+  display: block;
+  width: initial;
+  height: auto;
+  margin: auto;
+  padding: 5px 0;
+}
+
+/* line 164, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .latest_tweets .welcome_title .black_text {
+  color: #232324;
+  display: inline;
+}
+
+/* line 168, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .comunications {
+  font-family: "Bariol";
+  color: #eb4f4e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+/* line 178, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .comunications .white_text {
+  color: #ffffff;
+}
+
+/* line 181, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .comunications .header_communic {
+  display: inline-block;
+  background-color: #eb4f4e;
+  border: 3px #232324 solid;
+  border-radius: 12px;
+  width: 130px;
+  text-align: right;
+  float: right;
+}
+
+/* line 190, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .comunications .header_communic img {
+  padding-right: 6px;
+}
+
+/* line 193, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom {
+  background-color: #e74c3c;
+  height: 110px;
+}
+
+@media all and (max-width: 767px) {
+  /* line 198, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  .total_container .navigation_custom {
+    height: inherit;
+  }
+}
+/* line 202, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom #logo_head_title {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+/* line 207, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom #logo_head_text {
+  position: absolute;
+  margin-top: 55px;
+}
+
+/* line 211, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .navigation_custom img {
+  position: absolute;
+  margin-top: 18px;
+  padding: 0;
+}
+
+/* line 216, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .welcome_block {
+  min-height: 640px;
+  background-color: #eb4f4e;
+}
+
+/* line 220, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .smart_creative {
+  min-height: 368px;
+  font-family: "Bariol";
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 1px 1px #c34b2a;
+  font-weight: 400;
+  color: #e74c3c;
+  background-color: #232324;
+  padding-top: 0.8em;
+  padding-bottom: 0.4em;
+  box-sizing: border-box;
+}
+
+/* line 233, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .smart_creative h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+/* line 238, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .smart_creative img {
+  position: relative;
+  z-index: 0;
+  padding-top: 10px;
+}
+
+/* line 243, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .smart_creative .title {
+  font-size: 24px;
+}
+
+/* line 246, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .smart_creative .title h2 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+/* line 250, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team {
+  min-height: 368px;
+  font-family: "Bariol";
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 1px 1px #c34b2a;
+  font-weight: 400;
+  color: #e74c3c;
+  background-color: #232324;
+  padding-top: 0.8em;
+  padding-bottom: 0.4em;
+  box-sizing: border-box;
+  min-height: 515px;
+  background-color: #6cc372;
+  text-shadow: 0 1px 1px #232324;
+  overflow: hidden;
+}
+
+/* line 267, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+/* line 272, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team img {
+  position: relative;
+  z-index: 0;
+  padding-top: 10px;
+}
+
+/* line 277, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team .title {
+  font-size: 24px;
+}
+
+/* line 280, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team .title h2 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+/* line 284, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team h2 {
+  color: #6cc372;
+  font-size: 25px;
+  word-spacing: 600px;
+}
+
+/* line 289, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team img {
+  border: 3px solid #6cc372;
+  border-radius: 100px;
+  padding-top: 0;
+}
+
+/* line 294, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team .col-sm-3 {
+  background-color: #ffffff;
+  border: 5px #6cc372 solid;
+  border-radius: 20px;
+  padding-top: 10px;
+  min-height: 340px;
+}
+
+/* line 301, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team .title {
+  font-size: 20px;
+  color: #232324;
+  margin-bottom: 10px;
+}
+
+/* line 306, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .our_team .title h2 {
+  color: #ffffff;
+  font-size: 40px;
+  word-spacing: normal;
+}
+
+/* line 311, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer {
+  background-color: #ffffff;
+  min-height: 370px;
+}
+
+/* line 315, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .col-sm-12.col-xs-12 {
+  background-color: #ffffff;
+}
+
+/* line 318, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .row {
+  margin-top: -144px;
+}
+
+/* line 321, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable {
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* line 327, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .pricingTable-header {
+  background-color: #f5f5f5;
+  color: #fff;
+  padding-bottom: 25px;
+}
+
+/* line 332, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable-header .heading {
+  display: block;
+  padding: 15px 10px;
+  transition: 0.4s ease-in-out;
+}
+
+/* line 337, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable:hover .heading {
+  background-color: #419e00;
+}
+
+/* line 340, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .heading h3 {
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 345, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable-header .price-value {
+  display: block;
+  font-size: 25px;
+  font-weight: 800;
+  color: #474747;
+  line-height: 35px;
+  margin-top: 10px;
+  padding: 20px 10px 0;
+}
+
+/* line 354, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .price-value span {
+  font-size: 60px;
+  font-weight: 100;
+}
+
+/* line 358, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .subtitle {
+  font-size: 13px;
+  color: #262626;
+  margin-top: 15px;
+  display: block;
+}
+
+/* line 364, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .pricingContent ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* line 369, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .pricingContent ul li {
+  border-top: 1px solid #dbdbdb;
+  padding: 10px 0;
+  background-color: #f7fff7;
+}
+
+/* line 374, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .pricingContent ul li:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* line 377, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingContent ul li:last-child {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+/* line 380, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .btn-block {
+  background: #82b440;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  width: 50%;
+  padding: 10px 5px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+}
+
+/* line 391, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .btn-block:after {
+  content: "\f090";
+  font-family: 'FontAwesome';
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+/* line 397, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .pricingTableContainer .pricingTable .btn-block:hover {
+  background: #419e00;
+  color: #fff;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 402, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  .total_container .pricingTableContainer .pricingTable {
+    margin-bottom: 20px;
+  }
+}
+/* line 406, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .latest_tweets {
+  background-color: #eb4f4e;
+  min-height: 298px;
+}
+
+/* line 410, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .comunications {
+  min-height: 48px;
+  background-color: #232324;
+  display: inline-block;
+  width: inherit;
+}
+
+@media all and (max-width: 767px) {
+  /* line 417, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  .total_container .comunications {
+    height: inherit;
+    text-align: center;
+  }
+
+  /* line 421, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  .total_container .comunications .header_communic {
+    width: inherit;
+    text-align: center;
+  }
+}
+/* line 426, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.total_container .map {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+/* line 431, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.carousel_multiple {
+  font-family: "Bariol";
+  color: #6cc372;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 1px 1px #232324;
+  height: 560px;
+  background-color: rgba(236, 236, 236, 0.8);
+  overflow: hidden;
+  line-height: 1em;
+  box-sizing: border-box;
+}
+
+/* line 444, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.carousel_multiple h1 {
+  color: #616161;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+/* line 451, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.carousel_multiple .row {
+  margin-top: 30px;
+}
+
+/* line 454, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.carousel_multiple .col-sm-4 {
+  color: #232324;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 460, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.carousel_multiple .col-sm-4 a {
+  line-height: 28px;
+}
+
+/* line 463, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.carousel_multiple .col-sm-4 p {
+  margin-top: 1em;
+}
+
+/* line 466, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer {
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 473, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .container-fluid {
+  margin-bottom: 30px;
+}
+
+/* line 476, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .container-fluid .row .col-sm-4.col-xs-12:nth-child(odd) {
+  margin-top: 47px;
+}
+
+/* line 479, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top {
+  font-family: "Bariol";
+  color: #eb4f4e;
+  font-size: 20px;
+  font-weight: 400;
+  height: 110px;
+  padding-left: 2px;
+  font-family: "MyriadProRegular";
+  color: #ffffff;
+  background-color: #616161;
+  text-align: -webkit-left;
+  height: 94px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* line 494, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top .price-value-top {
+  color: #616161;
+  font-size: 40px;
+  font-weight: 400;
+  display: block;
+}
+
+/* line 500, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top .price-period-top {
+  color: #eb4f4e;
+  font-family: "Bariol";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 507, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top .price-value {
+  font-size: 64.23px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* line 512, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top .price-period {
+  font-size: 24.98px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 517, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top .btn.btn-block.btn-default {
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 93px;
+  height: 33px;
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 66px;
+  top: -57px;
+}
+
+/* line 532, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTableContent {
+  background-color: #f0f0f0;
+  word-spacing: 60px;
+  height: 94px;
+}
+
+/* line 537, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-sign-up {
+  padding-left: 2px;
+  font-family: "MyriadProRegular";
+  color: #ffffff;
+  background-color: #616161;
+  text-align: -webkit-left;
+  height: 94px;
+}
+
+/* line 545, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-sign-up .price-value {
+  font-size: 64.23px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* line 550, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-sign-up .price-period {
+  font-size: 24.98px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 555, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-sign-up .btn.btn-block.btn-default {
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 93px;
+  height: 33px;
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 66px;
+  top: -57px;
+}
+
+/* line 570, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top-middle {
+  font-family: "Bariol";
+  color: #eb4f4e;
+  font-size: 20px;
+  font-weight: 400;
+  height: 110px;
+  padding-left: 2px;
+  font-family: "MyriadProRegular";
+  color: #ffffff;
+  background-color: #616161;
+  text-align: -webkit-left;
+  height: 94px;
+  text-align: center;
+  background-color: #ffffff;
+  height: 141px;
+}
+
+/* line 586, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top-middle .price-value-top {
+  color: #616161;
+  font-size: 40px;
+  font-weight: 400;
+  display: block;
+}
+
+/* line 592, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top-middle .price-period-top {
+  color: #eb4f4e;
+  font-family: "Bariol";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 599, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top-middle .price-value {
+  font-size: 64.23px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* line 604, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top-middle .price-period {
+  font-size: 24.98px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 609, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top-middle .btn.btn-block.btn-default {
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 93px;
+  height: 33px;
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 66px;
+  top: -57px;
+}
+
+/* line 624, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top-middle .price-value-top {
+  color: #eb4f4e;
+}
+
+/* line 627, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-top-middle .price-period-top {
+  color: #232324;
+}
+
+/* line 630, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-sign-up-middle {
+  padding-left: 2px;
+  font-family: "MyriadProRegular";
+  color: #ffffff;
+  background-color: #616161;
+  text-align: -webkit-left;
+  height: 94px;
+  background-color: #eb4f4e;
+}
+
+/* line 639, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-sign-up-middle .price-value {
+  font-size: 64.23px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* line 644, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-sign-up-middle .price-period {
+  font-size: 24.98px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 649, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-sign-up-middle .btn.btn-block.btn-default {
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 93px;
+  height: 33px;
+  font-family: "Bariol";
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 66px;
+  top: -57px;
+}
+
+/* line 664, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.pricingTableContainer .pricingTable-sign-up-middle .btn.btn-block.btn-default {
+  color: #eb4f4e;
+}
+
+@media all and (max-width: 767px) {
+  /* line 668, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  body .total_container {
+    width: 100%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  /* line 673, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  body .total_container {
+    width: 800px;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  /* line 678, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  body .total_container {
+    width: 800px;
+  }
+}
+@media all and (min-width: 1200px) {
+  /* line 683, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  body .total_container {
+    width: 800px;
+  }
+}
+/* line 687, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.multi-item-carousel .carousel-inner > .item {
+  transition: 500ms ease-in-out left;
+}
+
+/* line 690, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+
+/* line 693, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+
+/* line 696, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+
+/* line 699, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+  /* line 703, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    backface-visibility: visible;
+    transform: none !important;
+  }
+}
+/* line 710, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+  background-image: none;
+}
+
+@media all and (max-width: 767px) {
+  /* line 715, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/adaptive_landing_page_example.scss */
+  .nav-pills > li {
+    float: none;
+    text-align: center;
+  }
+}
+/* line 2, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.pageheader {
+  height: 700px;
+  color: #FFF51F;
+}
+
+/* line 7, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.header_container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 12, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+img[src="images/logo_hw6.png"] {
+  margin-top: 24px;
+  margin-left: -202px;
+}
+
+/* line 17, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.text_title {
+  float: right;
+  width: 315px;
+  height: 170px;
+  color: #FFF51F;
+  margin-top: 238px;
+  margin-right: -78px;
+  font: 18px Arial, sans-serif;
+  line-height: 24px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+/* line 30, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.text_title_thema {
+  height: 80px;
+  font: bold 48px Arial, sans-serif;
+  line-height: 0.8;
+  overflow: hidden;
+}
+
+/* line 37, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.left_welcome {
+  height: 300px;
+  width: 270px;
+  background-color: #FFF51F;
+  color: #333333;
+  margin-top: 335px;
+  float: left;
+  box-sizing: border-box;
+  padding: 80px 20px;
+  font: 18px Arial, sans-serif;
+  line-height: 14px;
+}
+
+/* line 50, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.left_welcome_text {
+  overflow: hidden;
+  height: 50%;
+  text-align: justify;
+}
+
+/* line 56, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.left_welcome_thema {
+  font: 30px Arial, sans-serif;
+  height: 50%;
+}
+
+/* line 61, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.pageheader .buy_button {
+  float: right;
+  margin-top: 475px;
+  margin-right: -127px;
+}
+
+/* line 67, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.buy_button a {
+  background-color: #FFF51F;
+  width: 124px;
+  height: 49px;
+  display: table-cell;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font: bold 14px Arial, sans-serif;
+  vertical-align: middle;
+}
+
+/* line 80, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.buy_button:hover a {
+  background: #1896FF;
+  color: white;
+}
+
+/* line 85, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.buy_button:active a {
+  background-color: black;
+}
+
+/* line 89, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.header_communic {
+  float: right;
+  width: 130px;
+  margin-right: 56px;
+  text-align: center;
+}
+
+/* line 96, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.header_communic a {
+  display: inline-block;
+}
+
+/* line 100, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  min-height: 1000px;
+}
+
+/* line 106, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.open_now {
+  width: 270px;
+  min-height: 300px;
+  background-color: #E0E0E0;
+  margin-top: 500px;
+  margin-left: -270px;
+  float: left;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  color: #333333;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+  text-align: left;
+  padding: 140px 20px 75px 130px;
+  box-sizing: border-box;
+}
+
+/* line 124, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.left_menu {
+  width: 270px;
+  min-height: 480px;
+  margin-top: -20px;
+  float: left;
+  text-transform: uppercase;
+}
+
+/* line 132, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.left_menu a {
+  background-color: #26D2FC;
+  box-sizing: border-box;
+  padding-left: 40px;
+  text-align: left;
+}
+
+/* line 139, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.left_menu a:hover {
+  background-color: #333333;
+}
+
+/* line 143, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.left_menu li a {
+  width: 270px;
+  height: 37px;
+}
+
+/* line 148, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.left_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 154, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.left_menu_menu {
+  height: 73px;
+  background-color: #333333;
+  display: table-cell;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font: bold 14px Arial, sans-serif;
+  vertical-align: middle;
+  text-transform: uppercase;
+  width: inherit;
+  padding-left: 40px;
+}
+
+/* line 168, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.right_productes {
+  width: 870px;
+  height: 78px;
+  background-color: #FFFFFF;
+  float: right;
+  margin-top: -20px;
+  text-transform: uppercase;
+  font: italic bold 22px Roboto Arial sans-serif;
+  color: #707070;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+/* line 181, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.title_block {
+  background-color: #F8F8F8;
+}
+
+/* line 185, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 190, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.brand_footer {
+  height: 160px;
+  background-color: #ffffff;
+  vertical-align: middle;
+  text-align: justify;
+  -moz-text-align-last: justify;
+  text-align-last: justify;
+  text-transform: uppercase;
+  width: inherit;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 65px 15px;
+  font: bold 26px Arial sans-serif;
+  color: #BABABA;
+}
+
+/* line 206, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.instagram_feed {
+  height: 350px;
+  background-color: #eaeaea;
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+
+/* line 214, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.instagram_feed_img {
+  margin-top: 100px;
+}
+
+/* line 218, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.fa-2x {
+  margin-top: -10px;
+}
+
+/* line 222, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.instagram_feed_text {
+  font-family: Roboto, Arial, sans-serif;
+  color: #333333;
+  font-size: 22px;
+  font-weight: 900;
+  font-style: italic;
+  position: absolute;
+  display: inline-flex;
+  margin-left: -120px;
+  margin-top: 47px;
+}
+
+/* line 234, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.instagram_feed_lower {
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+/* line 239, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.instagram_feed img {
+  border: 4px white;
+  margin-right: 8px;
+}
+
+/* line 244, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.instagram_feed img:last-child {
+  margin-right: 0;
+}
+
+/* line 248, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_communic {
+  height: 150px;
+  width: 100%;
+}
+
+/* line 253, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_communic .buy_button a {
+  background-color: #FFF51F;
+  width: 390px;
+  height: 150px;
+}
+
+/* line 259, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_communic ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+/* line 266, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_communic ul li:first-child a {
+  background-color: #3B5997;
+}
+
+/* line 270, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_communic ul li:nth-child(2) a {
+  background-color: #3FCCFD;
+}
+
+/* line 274, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_communic ul li:last-child a {
+  background-color: #CB2027;
+}
+
+/* line 278, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.first_footer {
+  background-color: #373737;
+  height: 300px;
+  width: 100%;
+}
+
+/* line 284, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_left {
+  float: left;
+  width: 50%;
+  height: inherit;
+  display: inline-flex;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* line 293, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_left > .flex_unit {
+  flex: 1 1 auto;
+  margin: 5px;
+}
+
+/* line 300, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.flex_unit h2 {
+  text-indent: 6px;
+  font-family: Raleway, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* line 309, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_right .flex_unit h2 {
+  margin-bottom: 0px;
+}
+
+/* line 313, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_right .flex_unit p {
+  margin-top: 0;
+  line-height: 12px;
+}
+
+/* line 318, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.flex_unit p {
+  font-family: Roboto, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* line 326, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_right .flex_unit h3 {
+  font-family: Roboto, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+/* line 335, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.flex_unit {
+  width: 33%;
+  padding-top: 65px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* line 343, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_left .flex_unit ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 349, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_left .flex_unit ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* line 355, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_right {
+  float: right;
+  width: 50%;
+  height: inherit;
+  display: inline-flex;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* line 364, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_right > .flex_unit {
+  flex: 1 1 auto;
+  text-align: justify;
+  margin: 5px;
+}
+
+/* line 370, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.last_footer {
+  background-color: #333333;
+  height: 45px;
+}
+
+/* line 374, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.last_footer p {
+  font-family: Roboto, Arial, sans-serif;
+  color: #dad9d9;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+  line-height: 45px;
+  float: left;
+}
+
+/* line 386, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_right .flex_unit a {
+  color: #faef03;
+}
+
+/* line 390, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+video {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  z-index: -1;
+  margin-bottom: -603px;
+}
+
+/* line 398, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_right .flex_unit form input[type="e-mail"] {
+  background-color: #fff51f;
+  width: 180px;
+  height: 30px;
+  border: none;
+  text-align: center;
+}
+
+/* line 406, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_right .flex_unit form input[type="submit"] {
+  background-color: #000000;
+  width: 71px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  color: #f8f8f8;
+  padding: 0;
+  margin-left: -4px;
+}
+
+/* line 417, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.footer_right .flex_unit form {
+  margin-bottom: 30px;
+}
+
+/* line 421, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.last_footer .header_communic {
+  margin-top: 19px;
+  margin-right: 20px;
+  width: 185px;
+}
+
+/* line 427, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.productes_flex_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 870px;
+  height: inherit;
+  float: right;
+  margin-top: 5px;
+}
+
+/* line 440, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.productes_flex_container img {
+  background-color: #eaeaea;
+  width: 250px;
+  height: 235px;
+}
+
+/* line 446, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.productes_flex_unit {
+  color: #fff;
+  width: 270px;
+  height: 320px;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #abeafa;
+}
+
+/* line 456, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.productes_flex_unit h2 {
+  font-family: Roboto, Arial, sans-serif;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: right;
+  float: right;
+  margin-top: -10px;
+}
+
+/* line 467, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.productes_flex_unit h3 {
+  font-family: Roboto, Arial, sans-serif;
+  color: #e24602;
+  font-size: 14px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: right;
+  float: right;
+  margin-right: -66px;
+  text-decoration: line-through;
+}
+
+/* line 479, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.productes_flex_unit a {
+  text-decoration: none;
+  font-family: Roboto, Arial, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 18.012px;
+  text-align: left;
+  width: 150px;
+}
+
+/* line 491, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/one_page_store.scss */
+.productes_flex_container > .productes_flex_unit {
+  text-align: justify;
+  margin: 5px;
+}
+@font-face {
+  font-family: "SFUIText-Light";
+  src: url(/assets/SFUIText-Light-82939acb0a7da76b5a6153d68db324292fd9bd00e66c400410e12c297c5b9581.otf) format("truetype");
+}
+@font-face {
+  font-family: "GOTHICB";
+  src: url(/assets/GOTHICB-90cb613b492874a560c0ff18a3402b1d24fb7e846dff11295d5c4644d6c75e83.TTF) format("truetype");
+}
+@font-face {
+  font-family: "BebasNeue Bold";
+  src: url(/assets/BebasNeue_Bold-c6d5e1a6d3691f179b3026015d30f1e16c842c850fb9f6d694db1b77df666c6f.ttf) format("truetype");
+}
+@font-face {
+  font-family: "LatoRegular";
+  src: url(/assets/LatoRegular-db74f9b8a14dc69f7a9cad5a274ab6cc1ac00689109f9b399262a838f89acdf9.ttf) format("truetype");
+}
+/* line 16, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+body {
+  margin: 0px;
+}
+
+/* line 19, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container.landing {
+  font-family: "SFUIText-Light";
+  color: #000000;
+  background-color: #ffffff;
+  width: 1170px;
+  margin: auto;
+  padding: 0;
+  /* General button style (reset) */
+  /* Button 1 */
+  /* Button 1e */
+}
+
+/* line 29, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .green_square {
+  background-color: #65ca58;
+  width: 67px;
+  height: 7px;
+}
+
+/* line 33, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .title_text {
+  font-family: "GOTHICB";
+  color: #00888d;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 2em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* line 41, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .middle_position {
+  text-align: center;
+}
+
+/* line 43, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem, .container .asperiores_repellat, .container .at_vero, .container .et_harum, .container .lorem_impsum, .container .nostrum, .container .molestias, .container .perferendis, .container .communications, .container .copyright {
+  margin-top: 100px;
+}
+
+/* line 45, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem .text_column, .container .asperiores_repellat .text_column, .container .at_vero .text_column, .container .et_harum .text_column, .container .lorem_impsum .text_column, .container .nostrum .text_column, .container .molestias .text_column, .container .perferendis .text_column, .container .communications .text_column, .container .copyright .text_column {
+  padding: 0 30px;
+}
+
+/* line 47, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem .title_text, .container .asperiores_repellat .title_text, .container .at_vero .title_text, .container .et_harum .title_text, .container .lorem_impsum .title_text, .container .nostrum .title_text, .container .molestias .title_text, .container .perferendis .title_text, .container .communications .title_text, .container .copyright .title_text {
+  text-transform: uppercase;
+}
+
+/* line 49, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem .title_text_lower, .container .asperiores_repellat .title_text_lower, .container .at_vero .title_text_lower, .container .et_harum .title_text_lower, .container .lorem_impsum .title_text_lower, .container .nostrum .title_text_lower, .container .molestias .title_text_lower, .container .perferendis .title_text_lower, .container .communications .title_text_lower, .container .copyright .title_text_lower {
+  font-family: "GOTHICB";
+  color: #00888d;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* line 58, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem .header_in_column, .container .asperiores_repellat .header_in_column, .container .at_vero .header_in_column, .container .et_harum .header_in_column, .container .lorem_impsum .header_in_column, .container .nostrum .header_in_column, .container .molestias .header_in_column, .container .perferendis .header_in_column, .container .communications .header_in_column, .container .copyright .header_in_column {
+  font-family: "SFUIText-Light";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 65, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem .images, .container .asperiores_repellat .images, .container .at_vero .images, .container .et_harum .images, .container .lorem_impsum .images, .container .nostrum .images, .container .molestias .images, .container .perferendis .images, .container .communications .images, .container .copyright .images {
+  text-align: left;
+  margin-bottom: -10%;
+}
+
+/* line 68, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem img, .container .asperiores_repellat img, .container .at_vero img, .container .et_harum img, .container .lorem_impsum img, .container .nostrum img, .container .molestias img, .container .perferendis img, .container .communications img, .container .copyright img {
+  position: relative;
+}
+
+/* line 70, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem img.frame, .container .asperiores_repellat img.frame, .container .at_vero img.frame, .container .et_harum img.frame, .container .lorem_impsum img.frame, .container .nostrum img.frame, .container .molestias img.frame, .container .perferendis img.frame, .container .communications img.frame, .container .copyright img.frame {
+  top: -168px;
+  right: 0;
+  width: 46%;
+  margin-left: 27%;
+}
+
+/* line 75, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem img.planet, .container .asperiores_repellat img.planet, .container .at_vero img.planet, .container .et_harum img.planet, .container .lorem_impsum img.planet, .container .nostrum img.planet, .container .molestias img.planet, .container .perferendis img.planet, .container .communications img.planet, .container .copyright img.planet {
+  top: 60px;
+  right: 0;
+  margin-left: 41%;
+  width: 18%;
+}
+
+/* line 80, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem img.frame_horizontal, .container .asperiores_repellat img.frame_horizontal, .container .at_vero img.frame_horizontal, .container .et_harum img.frame_horizontal, .container .lorem_impsum img.frame_horizontal, .container .nostrum img.frame_horizontal, .container .molestias img.frame_horizontal, .container .perferendis img.frame_horizontal, .container .communications img.frame_horizontal, .container .copyright img.frame_horizontal {
+  top: -31px;
+  z-index: 0;
+  right: 0;
+}
+
+/* line 84, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem img.frame_rounded, .container .asperiores_repellat img.frame_rounded, .container .at_vero img.frame_rounded, .container .et_harum img.frame_rounded, .container .lorem_impsum img.frame_rounded, .container .nostrum img.frame_rounded, .container .molestias img.frame_rounded, .container .perferendis img.frame_rounded, .container .communications img.frame_rounded, .container .copyright img.frame_rounded {
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 25%;
+  margin-left: -5%;
+}
+
+/* line 90, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem img.frame_rounded:nth-child(1), .container .asperiores_repellat img.frame_rounded:nth-child(1), .container .at_vero img.frame_rounded:nth-child(1), .container .et_harum img.frame_rounded:nth-child(1), .container .lorem_impsum img.frame_rounded:nth-child(1), .container .nostrum img.frame_rounded:nth-child(1), .container .molestias img.frame_rounded:nth-child(1), .container .perferendis img.frame_rounded:nth-child(1), .container .communications img.frame_rounded:nth-child(1), .container .copyright img.frame_rounded:nth-child(1) {
+  margin-left: 14%;
+}
+
+/* line 92, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .asperiores_repellat .images, .container .at_vero .images, .container .et_harum .images, .container .lorem_impsum .images, .container .nostrum .images, .container .molestias .images, .container .perferendis .images, .container .communications .images, .container .copyright .images {
+  padding: 2% 0;
+  overflow: hidden;
+  margin-bottom: 1%;
+}
+
+/* line 96, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .asperiores_repellat .text_column, .container .at_vero .text_column, .container .et_harum .text_column, .container .lorem_impsum .text_column, .container .nostrum .text_column, .container .molestias .text_column, .container .perferendis .text_column, .container .communications .text_column, .container .copyright .text_column {
+  width: 20%;
+}
+
+/* line 98, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .asperiores_repellat .text_column .glyphicon.glyphicon-triangle-bottom, .container .at_vero .text_column .glyphicon.glyphicon-triangle-bottom, .container .et_harum .text_column .glyphicon.glyphicon-triangle-bottom, .container .lorem_impsum .text_column .glyphicon.glyphicon-triangle-bottom, .container .nostrum .text_column .glyphicon.glyphicon-triangle-bottom, .container .molestias .text_column .glyphicon.glyphicon-triangle-bottom, .container .perferendis .text_column .glyphicon.glyphicon-triangle-bottom, .container .communications .text_column .glyphicon.glyphicon-triangle-bottom, .container .copyright .text_column .glyphicon.glyphicon-triangle-bottom {
+  height: 15px;
+  margin-top: 60px;
+  transform: scale(1, 1.8);
+  color: #00888d;
+}
+
+/* line 103, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .asperiores_repellat .text_column .title_text, .container .at_vero .text_column .title_text, .container .et_harum .text_column .title_text, .container .lorem_impsum .text_column .title_text, .container .nostrum .text_column .title_text, .container .molestias .text_column .title_text, .container .perferendis .text_column .title_text, .container .communications .text_column .title_text, .container .copyright .text_column .title_text {
+  line-height: 70px;
+  margin-top: -210px;
+}
+
+/* line 106, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .asperiores_repellat .text_column .header_in_column, .container .at_vero .text_column .header_in_column, .container .et_harum .text_column .header_in_column, .container .lorem_impsum .text_column .header_in_column, .container .nostrum .text_column .header_in_column, .container .molestias .text_column .header_in_column, .container .perferendis .text_column .header_in_column, .container .communications .text_column .header_in_column, .container .copyright .text_column .header_in_column {
+  margin-top: 15px;
+}
+
+/* line 108, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .asperiores_repellat .text_column:nth-child(1), .container .at_vero .text_column:nth-child(1), .container .et_harum .text_column:nth-child(1), .container .lorem_impsum .text_column:nth-child(1), .container .nostrum .text_column:nth-child(1), .container .molestias .text_column:nth-child(1), .container .perferendis .text_column:nth-child(1), .container .communications .text_column:nth-child(1), .container .copyright .text_column:nth-child(1) {
+  margin-left: 20%;
+}
+
+/* line 110, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .asperiores_repellat .text_27px, .container .at_vero .text_27px, .container .et_harum .text_27px, .container .lorem_impsum .text_27px, .container .nostrum .text_27px, .container .molestias .text_27px, .container .perferendis .text_27px, .container .communications .text_27px, .container .copyright .text_27px {
+  font-size: 27px;
+}
+
+/* line 112, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .navigation {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 30px;
+  width: 1170px;
+  border-top: 1px #00888d solid;
+  border-bottom: 1px #00888d solid;
+}
+
+/* line 120, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .navigation ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 53%;
+  margin: auto;
+}
+
+/* line 126, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .navigation a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-family: "SFUIText-Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* line 137, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .navigation li {
+  list-style-type: none;
+  float: left;
+}
+
+/* line 140, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .navigation a:hover {
+  background-color: #00888d;
+  color: #ffffff;
+}
+
+/* line 143, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .at_vero .col-sm-2.col-xs-2, .container .et_harum .col-sm-2.col-xs-2, .container .lorem_impsum .col-sm-2.col-xs-2, .container .nostrum .col-sm-2.col-xs-2, .container .molestias .col-sm-2.col-xs-2, .container .perferendis .col-sm-2.col-xs-2, .container .communications .col-sm-2.col-xs-2, .container .copyright .col-sm-2.col-xs-2 {
+  width: 20%;
+  padding: 1%;
+}
+
+/* line 146, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .at_vero .text_column, .container .et_harum .text_column, .container .lorem_impsum .text_column, .container .nostrum .text_column, .container .molestias .text_column, .container .perferendis .text_column, .container .communications .text_column, .container .copyright .text_column {
+  width: 100%;
+  padding: 20% 2%;
+  text-align: center;
+  font-family: "SFUIText-Light";
+  color: #000000;
+  font-weight: 300;
+}
+
+/* line 153, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .at_vero .text_column .header_in_column, .container .et_harum .text_column .header_in_column, .container .lorem_impsum .text_column .header_in_column, .container .nostrum .text_column .header_in_column, .container .molestias .text_column .header_in_column, .container .perferendis .text_column .header_in_column, .container .communications .text_column .header_in_column, .container .copyright .text_column .header_in_column {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 157, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .at_vero .text_column p, .container .et_harum .text_column p, .container .lorem_impsum .text_column p, .container .nostrum .text_column p, .container .molestias .text_column p, .container .perferendis .text_column p, .container .communications .text_column p, .container .copyright .text_column p {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/* line 160, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .at_vero .images, .container .et_harum .images, .container .lorem_impsum .images, .container .nostrum .images, .container .molestias .images, .container .perferendis .images, .container .communications .images, .container .copyright .images {
+  overflow: visible;
+}
+
+/* line 162, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .at_vero .images img, .container .et_harum .images img, .container .lorem_impsum .images img, .container .nostrum .images img, .container .molestias .images img, .container .perferendis .images img, .container .communications .images img, .container .copyright .images img {
+  position: static;
+  margin: auto;
+  padding: 0;
+  display: block;
+}
+
+/* line 167, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .at_vero .images img.another, .container .et_harum .images img.another, .container .lorem_impsum .images img.another, .container .nostrum .images img.another, .container .molestias .images img.another, .container .perferendis .images img.another, .container .communications .images img.another, .container .copyright .images img.another {
+  margin-top: -111px;
+}
+
+/* line 169, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .et_harum .images, .container .lorem_impsum .images, .container .nostrum .images, .container .molestias .images, .container .perferendis .images, .container .communications .images, .container .copyright .images {
+  min-height: 537px;
+}
+
+/* line 171, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .et_harum .ut_enim_ad, .container .lorem_impsum .ut_enim_ad, .container .nostrum .ut_enim_ad, .container .molestias .ut_enim_ad, .container .perferendis .ut_enim_ad, .container .communications .ut_enim_ad, .container .copyright .ut_enim_ad {
+  background-color: #f1f1f1;
+  width: 188px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  margin: 50px 20px;
+  text-transform: uppercase;
+  font-family: "GOTHICB";
+  color: #00888d;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* line 183, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .et_harum .ut_enim_ad:hover, .container .lorem_impsum .ut_enim_ad:hover, .container .nostrum .ut_enim_ad:hover, .container .molestias .ut_enim_ad:hover, .container .perferendis .ut_enim_ad:hover, .container .communications .ut_enim_ad:hover, .container .copyright .ut_enim_ad:hover, .container .et_harum .ut_enim_ad:disabled, .container .lorem_impsum .ut_enim_ad:disabled, .container .nostrum .ut_enim_ad:disabled, .container .molestias .ut_enim_ad:disabled, .container .perferendis .ut_enim_ad:disabled, .container .communications .ut_enim_ad:disabled, .container .copyright .ut_enim_ad:disabled {
+  border: 4px #00888d solid;
+}
+
+/* line 185, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .lorem_impsum, .container .nostrum, .container .molestias, .container .perferendis, .container .communications, .container .copyright {
+  min-height: 537px;
+}
+
+/* line 187, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .lorem_impsum .images, .container .nostrum .images, .container .molestias .images, .container .perferendis .images, .container .communications .images, .container .copyright .images {
+  min-height: 1px;
+}
+
+/* line 189, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .lorem_impsum .green_square, .container .nostrum .green_square, .container .molestias .green_square, .container .perferendis .green_square, .container .communications .green_square, .container .copyright .green_square {
+  position: relative;
+}
+
+/* line 191, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .lorem_impsum img.magicien, .container .nostrum img.magicien, .container .molestias img.magicien, .container .perferendis img.magicien, .container .communications img.magicien, .container .copyright img.magicien {
+  margin-bottom: -35%;
+}
+
+/* line 193, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .nostrum .title_text_lower, .container .molestias .title_text_lower, .container .perferendis .title_text_lower, .container .communications .title_text_lower, .container .copyright .title_text_lower {
+  margin-bottom: 2em;
+}
+
+/* line 195, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .nostrum .nostrum_text, .container .molestias .nostrum_text, .container .perferendis .nostrum_text, .container .communications .nostrum_text, .container .copyright .nostrum_text {
+  min-height: 385px;
+}
+
+/* line 197, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .nostrum .nostrum_text button, .container .molestias .nostrum_text button, .container .perferendis .nostrum_text button, .container .communications .nostrum_text button, .container .copyright .nostrum_text button {
+  margin-left: 4%;
+}
+
+/* line 199, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .nostrum .nostrum_text .text, .container .molestias .nostrum_text .text, .container .perferendis .nostrum_text .text, .container .communications .nostrum_text .text, .container .copyright .nostrum_text .text {
+  width: 100%;
+  margin-left: 2%;
+}
+
+/* line 202, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .nostrum .nostrum_text .text .title_text, .container .molestias .nostrum_text .text .title_text, .container .perferendis .nostrum_text .text .title_text, .container .communications .nostrum_text .text .title_text, .container .copyright .nostrum_text .text .title_text {
+  width: 100%;
+  margin-left: 2%;
+  margin-top: 15%;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: left;
+}
+
+/* line 209, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .nostrum .nostrum_text .text .title_text_lower, .container .molestias .nostrum_text .text .title_text_lower, .container .perferendis .nostrum_text .text .title_text_lower, .container .communications .nostrum_text .text .title_text_lower, .container .copyright .nostrum_text .text .title_text_lower {
+  width: 100%;
+  margin-left: 2%;
+  font-family: "SFUIText-Light";
+  color: #000000;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+/* line 219, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .molestias .molestias_content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 222, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .molestias .molestias_content .media {
+  margin-top: 60px;
+}
+
+/* line 224, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .molestias .molestias_content img.windmill {
+  margin: 0 auto;
+  margin-top: -120px;
+}
+
+/* line 227, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .molestias .molestias_content .media-left {
+  padding-right: 30px;
+}
+
+/* line 229, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .molestias .molestias_content h4.media-heading {
+  font-family: "GOTHICB";
+  color: #00888d;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: #00888d;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  width: 70%;
+}
+
+/* line 241, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .molestias .molestias_content p.media-body {
+  font-family: "SFUIText-Light";
+  color: #000000;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+}
+
+/* line 248, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .molestias .molestias_content .media-body a {
+  text-decoration: underline !important;
+}
+
+/* line 250, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .perferendis {
+  padding: 30px;
+}
+
+/* line 252, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .perferendis .perferendis_content {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* line 255, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .text {
+  font-family: "SFUIText-Light";
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 11%;
+  width: 65%;
+  line-height: 2em;
+}
+
+/* line 265, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .communications, .container .copyright {
+  margin-top: 50px;
+  min-height: 1px;
+}
+
+/* line 268, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .communications .images, .container .copyright .images {
+  text-align: center;
+}
+
+/* line 270, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .communications .images img, .container .copyright .images img {
+  position: static;
+  margin: 10px 37px;
+  display: inline;
+  border: 4px #00888d solid;
+  border-collapse: 9px;
+  padding: 30px;
+}
+
+/* line 278, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .communications .images img.fb, .container .copyright .images img.fb {
+  padding: 29px 36px;
+}
+
+/* line 280, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .copyright {
+  margin-top: 10px;
+  padding: 0 30px;
+  font-family: "SFUIText-Light";
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  min-height: 1px;
+}
+
+/* line 290, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .copyright .copyright_content {
+  border-top: 1px #00888d solid;
+  padding: 0 10px;
+}
+
+/* line 293, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .copyright .left_text {
+  float: left;
+}
+
+/* line 295, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .copyright .right_text {
+  float: right;
+}
+
+/* line 297, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container header {
+  padding: 35px 60px;
+  font-family: "BebasNeue Bold";
+  color: #00888d;
+  font-weight: 400;
+  height: 175px;
+}
+
+/* line 303, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container header a {
+  text-decoration: none;
+  color: #00888d;
+}
+
+/* line 306, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container header .header {
+  float: left;
+}
+
+/* line 308, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container header .header .header_text {
+  line-height: 1.25em;
+  font-size: 50px;
+}
+
+/* line 311, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container header .header .header_small_text {
+  line-height: 1.25em;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  text-align: center;
+  font-family: "LatoRegular";
+}
+
+/* line 318, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container header .menu-button {
+  float: right;
+  font-size: 50px;
+  line-height: 100px;
+}
+
+/* line 322, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container header .menu-button a:hover {
+  color: #6cd0d4;
+}
+
+/* line 324, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic {
+  overflow: hidden;
+}
+
+/* line 326, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic img {
+  z-index: -5;
+}
+
+/* line 328, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic .carousel-inner {
+  min-height: 550px;
+}
+
+/* line 330, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic .carousel-inner .moon {
+  position: absolute;
+  top: 0px;
+  right: 85px;
+}
+
+/* line 334, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic .carousel-inner .shadow {
+  position: absolute;
+  top: -135px;
+  right: 0;
+}
+
+/* line 338, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic .carousel-indicators li {
+  background-color: #6cd0d4;
+  border: none;
+}
+
+/* line 341, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic .carousel-indicators li.active {
+  background-color: #00888d;
+}
+
+/* line 343, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic .carousel-control {
+  background: none;
+  text-shadow: none;
+  color: #00888d;
+  opacity: 1;
+  width: 5%;
+}
+
+/* line 349, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic .carousel-control .arrows {
+  line-height: 550px;
+  transform: scale(1, 1.8);
+}
+
+/* line 352, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container #carousel-example-generic .carousel-inner {
+  min-height: 550px;
+}
+
+/* line 354, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .btn {
+  border: none;
+  font-family: "GOTHICB";
+  font-size: 15px;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 0px 16px;
+  display: inline-block;
+  margin: 40px 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  line-height: 32px;
+  border-radius: 0;
+  z-index: 6;
+}
+
+/* line 375, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 382, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .btn-1 {
+  border: 1px solid #00888d;
+  color: #00888d;
+}
+
+/* line 385, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .btn-1e {
+  overflow: hidden;
+}
+
+/* line 387, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .btn-1e:after {
+  width: 100%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background: #00888d;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+/* line 398, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .btn-1e:hover,
+.container .btn-1e:active {
+  color: #ffffff;
+}
+
+/* line 401, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .btn-1e:hover:after {
+  height: 260%;
+  opacity: 1;
+}
+
+/* line 404, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .btn-1e:active:after {
+  height: 400%;
+  opacity: 1;
+}
+
+/* line 407, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem .green_square, .container .asperiores_repellat .green_square, .container .at_vero .green_square, .container .et_harum .green_square, .container .lorem_impsum .green_square, .container .nostrum .green_square, .container .molestias .green_square, .container .perferendis .green_square, .container .communications .green_square, .container .copyright .green_square {
+  margin-left: 47%;
+  width: 6%;
+}
+
+/* line 410, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem .title_text, .container .asperiores_repellat .title_text, .container .at_vero .title_text, .container .et_harum .title_text, .container .lorem_impsum .title_text, .container .nostrum .title_text, .container .molestias .title_text, .container .perferendis .title_text, .container .communications .title_text, .container .copyright .title_text {
+  text-align: center;
+}
+
+/* line 412, /home/max/portfolio/maxim-kiselyow/app/assets/stylesheets/pages.scss */
+.container .voluptatem .text, .container .asperiores_repellat .text, .container .at_vero .text, .container .et_harum .text, .container .lorem_impsum .text, .container .nostrum .text, .container .molestias .text, .container .perferendis .text, .container .communications .text, .container .copyright .text {
+  text-align: center;
+  width: 100%;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Geometria Light";
+  src: asset-url("geometria_light.otf");}
+@font-face {
+  font-family: "Geometria Bold";
+  src: asset-url("geometria_bold.otf");}
+.html {
+  height: 100%; }
+
+.body {
+  background-image: url("https://res.cloudinary.com/dapc2mxjl/image/upload/v1518216383/visit_page/bitmap_2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0px; }
+
+.container-fluid {
+  height: 100%; }
+  .container-fluid .row {
+    height: 100%; }
+  .container-fluid .navigation, .container-fluid .navigation_lower, .container-fluid .communications {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center; }
+    .container-fluid .navigation ul, .container-fluid .navigation_lower ul, .container-fluid .communications ul {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      margin: auto;
+      justify-content: left;
+      display: flex; }
+    .container-fluid .navigation a, .container-fluid .navigation_lower a, .container-fluid .communications a {
+      flex-direction: column;
+      justify-content: space-around;
+      display: flex;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-family: "Geometria Light";
+      font-weight: 300;
+      text-align: center; }
+    .container-fluid .navigation li, .container-fluid .navigation_lower li, .container-fluid .communications li {
+      flex: 1 1 auto;
+      list-style-type: none;
+      float: left;
+      width: 8.33%;
+      overflow: hidden;
+      height: 80px;
+      padding: 0 10px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column; }
+    .container-fluid .navigation .logo, .container-fluid .navigation_lower .logo, .container-fluid .communications .logo {
+      width: 16.66%;
+      background-color: #353643; }
+    .container-fluid .navigation .text, .container-fluid .navigation_lower .text, .container-fluid .communications .text, .container-fluid .navigation .text-icons, .container-fluid .navigation_lower .text-icons, .container-fluid .communications .text-icons, .container-fluid .navigation .lower_logo, .container-fluid .navigation_lower .lower_logo, .container-fluid .communications .lower_logo {
+      width: unset;
+      font-size: 12px; }
+      .container-fluid .navigation .text a, .container-fluid .navigation_lower .text a, .container-fluid .communications .text a, .container-fluid .navigation .text-icons a, .container-fluid .navigation_lower .text-icons a, .container-fluid .communications .text-icons a, .container-fluid .navigation .lower_logo a, .container-fluid .navigation_lower .lower_logo a, .container-fluid .communications .lower_logo a {
+        border: 2px solid transparent; }
+      .container-fluid .navigation .text a:hover, .container-fluid .navigation_lower .text a:hover, .container-fluid .communications .text a:hover, .container-fluid .navigation .text-icons a:hover, .container-fluid .navigation_lower .text-icons a:hover, .container-fluid .communications .text-icons a:hover, .container-fluid .navigation .lower_logo a:hover, .container-fluid .navigation_lower .lower_logo a:hover, .container-fluid .communications .lower_logo a:hover {
+        border-bottom: 2px solid #4ea8d5;
+        font-size: 2em;
+        transition: 3s; }
+    .container-fluid .navigation .number, .container-fluid .navigation_lower .number, .container-fluid .communications .number {
+      font-size: 15px; }
+    .container-fluid .navigation .menu, .container-fluid .navigation_lower .menu, .container-fluid .communications .menu, .container-fluid .navigation .earphone, .container-fluid .navigation_lower .earphone, .container-fluid .communications .earphone {
+      background-color: #4ea8d5; }
+      .container-fluid .navigation .menu a, .container-fluid .navigation_lower .menu a, .container-fluid .communications .menu a, .container-fluid .navigation .earphone a, .container-fluid .navigation_lower .earphone a, .container-fluid .communications .earphone a {
+        height: 100%;
+        color: #ffffff; }
+        .container-fluid .navigation .menu a .glyphicon, .container-fluid .navigation_lower .menu a .glyphicon, .container-fluid .communications .menu a .glyphicon, .container-fluid .navigation .earphone a .glyphicon, .container-fluid .navigation_lower .earphone a .glyphicon, .container-fluid .communications .earphone a .glyphicon {
+          transform: scale(2, 1.5); }
+        .container-fluid .navigation .menu a .menu-text, .container-fluid .navigation_lower .menu a .menu-text, .container-fluid .communications .menu a .menu-text, .container-fluid .navigation .earphone a .menu-text, .container-fluid .navigation_lower .earphone a .menu-text, .container-fluid .communications .earphone a .menu-text {
+          font-size: 9px;
+          letter-spacing: 0.7px; }
+    .container-fluid .navigation .earphone a .glyphicon, .container-fluid .navigation_lower .earphone a .glyphicon, .container-fluid .communications .earphone a .glyphicon {
+      transform: scale(2, 2); }
+  .container-fluid .main_content {
+    height: calc(100% - 160px);
+    font-family: "Geometria Bold";
+    font-size: 3.7vw;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .container-fluid .main_content p {
+      padding-left: 25%; }
+  .container-fluid .navigation_lower, .container-fluid .communications {
+    margin: -80px -15px; }
+    .container-fluid .navigation_lower a, .container-fluid .communications a {
+      height: 100%; }
+    .container-fluid .navigation_lower .text, .container-fluid .communications .text, .container-fluid .navigation_lower .text-icons, .container-fluid .communications .text-icons, .container-fluid .navigation_lower .lower_logo, .container-fluid .communications .lower_logo {
+      border-bottom: 4px solid transparent; }
+      .container-fluid .navigation_lower .text a:hover, .container-fluid .communications .text a:hover, .container-fluid .navigation_lower .text-icons a:hover, .container-fluid .communications .text-icons a:hover, .container-fluid .navigation_lower .lower_logo a:hover, .container-fluid .communications .lower_logo a:hover {
+        border-bottom: 4px solid #4ea8d5;
+        transition: 3s; }
+  .container-fluid .text-icons i, .container-fluid .lower_logo i {
+    transform: scale(2, 2); }
+  .container-fluid .text-icons .text, .container-fluid .lower_logo .text, .container-fluid .text-icons .text-icons, .container-fluid .lower_logo .text-icons, .container-fluid .text-icons .lower_logo, .container-fluid .lower_logo .lower_logo {
+    border-bottom: 4px solid transparent; }
+    .container-fluid .text-icons .text a, .container-fluid .lower_logo .text a, .container-fluid .text-icons .text-icons a, .container-fluid .lower_logo .text-icons a, .container-fluid .text-icons .lower_logo a, .container-fluid .lower_logo .lower_logo a {
+      height: 100%; }
+    .container-fluid .text-icons .text a:hover, .container-fluid .lower_logo .text a:hover, .container-fluid .text-icons .text-icons a:hover, .container-fluid .lower_logo .text-icons a:hover, .container-fluid .text-icons .lower_logo a:hover, .container-fluid .lower_logo .lower_logo a:hover {
+      border-bottom: 4px solid #4ea8d5;
+      transform: scale(1.2, 1.2);
+      transition: 3s; }
+  .container-fluid .lower_logo {
+    transform: scale(1, 1);
+    margin-right: 80px; }
+  .container-fluid .communications {
+    margin: -164px -15px; }
+    .container-fluid .communications ul {
+      flex-direction: column;
+      float: right;
+      margin-right: 20px; }
+  .container-fluid .sticky {
+    position: fixed;
+    top: 25%;
+    right: 15%; }
+    .container-fluid .sticky a {
+      text-decoration: none;
+      color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: 16px; }
+    .container-fluid .sticky .sticky_text {
+      margin-right: 5px;
+      padding: 0 5px;
+      font-size: 8px;
+      line-height: 16px;
+      font-family: "Geometria Light";
+      text-transform: uppercase;
+      background-color: #353643; }
+
+.bg_filter {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+  .bg_filter img {
+    height: 100%;
+    width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
